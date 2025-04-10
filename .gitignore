@@ -1,0 +1,17 @@
+# Next.js build ve cache klasörleri
+.next/
+out/
+build/
+
+# Node.js bağımlılık klasörü
+node_modules/
+
+# Çevresel değişkenler
+.env*
+!.env.example
+
+# Log dosyaları
+*.log
+
+# MacOS sistem dosyası
+.DS_Store
