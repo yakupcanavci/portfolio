@@ -18,28 +18,28 @@ type Content = {
 
 const content: Array<Content> = [
   {
-    state: 'typography',
-    shows: ['typography'],
-    title: 'Typography',
-    description: 'Selecting the font type, font size, and font weight.',
+    state: 'Visual Hierarchy',
+    shows: ['Visual Hierarchy'],
+    title: 'Visual Hierarchy',
+    description: 'Guide attention with smart typography.',
   },
   {
-    state: 'spacing',
-    shows: ['typography', 'spacing'],
-    title: 'Spacing',
-    description: 'Positioning and adding spacing between elements.',
+    state: 'Layout & Structure',
+    shows: ['Visual Hierarchy', 'Layout & Structure'],
+    title: 'Layout & Structure',
+    description: 'Organize elements for intuitive flow.',
   },
   {
-    state: 'colors',
-    shows: ['typography', 'spacing', 'colors'],
-    title: 'Colors',
-    description: 'Choosing a color scheme with sufficient contrast.',
+    state: 'Accessible Color Systems',
+    shows: ['Visual Hierarchy', 'Layout & Structure', 'Accessible Color Systems'],
+    title: 'Accessible Color Systems',
+    description: 'Enhance clarity with consistent contrast.',
   },
   {
-    state: 'effects',
-    shows: ['typography', 'spacing', 'colors', 'effects'],
-    title: 'Effects',
-    description: 'Add effects like borders, shadows, rounded corners, etc.',
+    state: 'Design Enhancements',
+    shows: ['Visual Hierarchy', 'Layout & Structure', 'Accessible Color Systems', 'Design Enhancements'],
+    title: 'Design Enhancements',
+    description: 'Add Design Enhancements like borders, shadows, rounded corners, etc.',
   },
 ];
 
@@ -50,10 +50,11 @@ function CleanIntuitive() {
     <>
       <header className={clsx('mb-8')}>
         <SectionTitle
-          title="Eye Catching, Modern & Minimalist Design."
-          caption="Clean & Intuitive"
-          description="Keep the User Interface clean with a modern touch without
-            compromising the User Experience."
+          title="Designs that Feel Right, and Work Even Better."
+          caption="User Experience & Acceptance"
+          description="Modern, intuitive, and purpose-driven—crafted for real users and real impact.
+
+"
         />
       </header>
       <SectionContent>
@@ -83,7 +84,7 @@ function CleanIntuitive() {
                   state={
                     currentState
                       ? currentState.shows
-                      : ['typography', 'spacing', 'colors', 'effects']
+                      : ['Visual Hierarchy', 'Layout & Structure', 'Accessible Color Systems', 'Design Enhancements']
                   }
                 />
               </div>
@@ -92,7 +93,7 @@ function CleanIntuitive() {
                   state={
                     currentState
                       ? currentState.shows
-                      : ['typography', 'spacing', 'colors', 'effects']
+                      : ['Visual Hierarchy', 'Layout & Structure', 'Accessible Color Systems', 'Design Enhancements']
                   }
                   title="UI Implementation"
                   description="Start creating UI components using React and Tailwind CSS."
